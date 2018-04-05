@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { MoviesComponent } from './movies.component';
 import { MovieService } from './movie.service';
+import { MovieCardComponent } from './movie-card/movie-card.component';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { MovieService } from './movie.service';
       { path: 'movies', component: MoviesComponent },
     ])
   ],
-  declarations: [MoviesComponent],
+  declarations: [MoviesComponent, MovieCardComponent],
   providers:[
     MovieService
   ]

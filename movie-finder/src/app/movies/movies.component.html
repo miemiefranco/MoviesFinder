@@ -1,3 +1,21 @@
-<p>
-  movies works!
-</p>
+<!-- <div *ngIf='response'>
+    <div *ngIf='movies'>
+        <div *ngFor = 'let movie of movies'>
+           {{movie.title}} | {{movie.release_date}}
+          </div>
+    </div>
+</div>
+<div *ngIf='movie'>
+  {{movie.title}}
+</div>
+<div *ngIf='genres'>
+   <div *ngFor = 'let genre of genres'>
+     {{genre.name}}
+   </div>
+</div> -->
+<div class="movies-container">
+    <div *ngIf='movies'>
+        <div *ngFor = 'let movie of movies'>
+           <movie-card [movie]='movie'></movie-card>
+        </div>
+</div>
