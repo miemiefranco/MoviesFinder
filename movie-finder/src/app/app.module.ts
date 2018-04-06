@@ -7,9 +7,12 @@ import { RouterModule } from '@angular/router';
 import { MovieModule } from './movies/movie.module';
 import { MoviesComponent } from './movies/movies.component';
 
+import { NavComponent } from './nav/nav.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
