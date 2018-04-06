@@ -1,8 +1,9 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background: #211c1b !important;
     color: #fff !important;
 }
 
 .aqua_buffer{
-   background: #178aa5;
+   color: #178aa5;
 }
