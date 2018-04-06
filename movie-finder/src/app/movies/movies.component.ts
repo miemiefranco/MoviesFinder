@@ -14,7 +14,8 @@ export class MoviesComponent implements OnInit {
   movie:IMovie;
   genreResponse: IGenreResponse;
   genres: IGenre[];
-  
+  sliderContent;
+
   errorMessage:string;
 
   constructor(private _movieService: MovieService){
@@ -35,6 +36,22 @@ export class MoviesComponent implements OnInit {
     this.genreResponse = genres;
     this.genres = this.genreResponse.genres;
   });
+  }
+
+  controlLClicked()
+  {
+    let currentMargin = parseInt(this.sliderContent.nativeElement.style.marginLeft);
+    if(isNaN(currentMargin)){
+      currentMargin = 0;
+    }
+
+    let newMargin = currentMargin + 275;  
+    this.sliderContent.nativeElement.style.marginLeft = newMargin+'px';
+    alert('left clicked');
+  }
+  controlRClicked()
+  {
+    alert('right clicked');
   }
 
 }
