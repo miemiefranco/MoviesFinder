@@ -1,0 +1,18 @@
+
+.hero{
+   overflow: hidden;
+}
+.hero-img{
+    width:100%;
+    background-image: url('/assets/images/onb_hero.jpg');
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height:500px;
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-img {
+        min-height:200px;
+    }
+}

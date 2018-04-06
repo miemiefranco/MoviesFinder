@@ -8,11 +8,13 @@ import { MovieModule } from './movies/movie.module';
 import { MoviesComponent } from './movies/movies.component';
 
 import { NavComponent } from './nav/nav.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
